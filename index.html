@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        Employee Timesheet
+    </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Slabo+27px" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-dark bg-dark mb-3">
+            <a class="navbar-brand" href="#">Employee Timesheet</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="employee-display">
+            <div class="card border-dark mb-3" style="max-width: 68rem;">
+                <div class="card-header">Header</div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th class="card-text" scope="col">#</th>
+                            <th class="card-text" id="name" scope="col">Name</th>
+                            <th class="card-text" id="role" scope="col">Role</th>
+                            <th class="card-text" id="startDate" scope="col">Start Date</th>
+                            <th class="card-text" id="monthsWorked" scope="col">Months Worked</th>
+                            <th class="card-text" id="monthlyRate" scope="col">Monthly Rate ($)</th>
+                            <th class="card-text" id="totalBilled" scope="col">Total Billed ($)</th>
+                        </tr>
+                    </thead>
+
+                    <!-- <div class="card-body text-dark"> -->
+
+                    <tbody>
+                        <tr>
+                            <th class="card-text" scope="row">1</th>
+                            <td id="nameText">NAME</td>
+                            <td id="roleText">ROLE</td>
+                            <td id="startDateText">START DATE</td>
+                            <td id="monthsWorked">MONTHS WORKED</td>
+                            <td id="monthlyRateText">MONTHLY RATE</td>
+                            <td id="totalBilled">TOTAL BILLED</td>
+                        </tr>
+                    </tbody>
+                    <!-- </div> -->
+
+                </table>
+
+
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card border-dark mt-3 mb-3" style="max-width: 68rem;">
+                <div class="card-header">Employee Information</div>
+                <form>
+                    <div class="form-group">
+                        <label class="card-text" for="employeeName">Employee Name</label>
+                        <input type="text" class="form-control" id="employeeName1" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label class="card-text" for="employeeRole">Role</label>
+                        <input type="text" class="form-control" id="employeeRole1" placeholder="Role">
+                    </div>
+                    <div class="form-group">
+                        <label class="card-text" for="startDate">Start Date</label>
+                        <input type="text" class="form-control" id="startDate1" placeholder="Start Date">
+                    </div>
+                    <div class="form-group">
+                        <label class="card-text" for="monthlyRate">Role</label>
+                        <input type="text" class="form-control" id="monthlyRate1" placeholder="Monthly Rate">
+                    </div>
+
+                    <button type="submit" class="btn btn-dark" id="add-employee">Submit</button>
+                </form>
+            </div>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/5.0.1/firebase.js"></script>
+        <script src="app.js"></script>
+</body>
+
+</html>

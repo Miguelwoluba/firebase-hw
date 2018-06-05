@@ -1,0 +1,15 @@
+.navbar-brand {
+    font-family: 'Slabo 27px', serif;
+    font-size: 50px;
+    text-align: center;
+}
+
+
+#card-text {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bolder;
+}
+
+#button {
+    font-family: 'Slabo 27px', serif;
+}
